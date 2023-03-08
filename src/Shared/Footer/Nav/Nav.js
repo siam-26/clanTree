@@ -4,9 +4,9 @@ import { FiMenu } from 'react-icons/fi';
 
 const Nav = () => {
     return (
-        <div className="navbar px-7 w-full md:w-11/12 mx-auto">
-            <a className=" normal-case text-3xl font-bold">Clantree</a>
-            <div className="navbar-end ml-auto">
+        <div className="navbar px-10 lg:px-7 w-full lg:w-11/12 mx-auto">
+            <div className=""><a className="normal-case text-3xl font-bold lg:hidden">Clantree</a></div>
+            <div className="navbar-end flex ml-auto lg:hidden">
                 <div className="dropdown ">
                     <label tabIndex={0} className=" lg:hidden ">
                         <FiMenu className="text-2xl" />
@@ -18,10 +18,11 @@ const Nav = () => {
                         <li><a className="btn btn-color-style">Get started</a></li>
                     </ul>
                 </div>
-                <a className="hidden md:block normal-case text-3xl font-bold">Clantree</a>
+
             </div>
 
             {/* Large Device */}
+            <div className='lg:navbar-start hidden md:block'><a className="hidden lg:flex normal-case text-3xl font-bold ">Clantree</a></div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 font-bold ul-style">
                     <li className="li-style"><a className="noo-hover link-style">Item 1</a></li>
@@ -31,7 +32,7 @@ const Nav = () => {
                     <div className="animation start-home"></div>
                 </ul>
             </div>
-            <div className="navbar-end hidden md:block">
+            <div className="navbar-end hidden lg:flex">
                 <a className="btn btn-color-style">Get started</a>
             </div>
         </div>
