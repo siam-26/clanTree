@@ -42,7 +42,7 @@ const MainReview = () => {
     }
     return (
         <div className='w-full'>
-            <article className="bg-none review  py-10 ">
+            <article className="bg-none review  py-10 lg:pb-0 ">
                 <div className="avatar flex justify-center">
                     <div className="w-24 rounded-full ">
                         <img src={image} alt={name} />
@@ -75,7 +75,7 @@ const MainReview = () => {
                         </button>
                     </div>
                 </div>
-                <p className="info leading-7 pb-6 md:text-xl text-base w-10/12 md:w-5/6 mx-auto mt-5 text-center">{text}</p>
+                <p className="info leading-7 pb-6 md:text-xl text-base w-10/12 md:w-5/6 mx-auto mt-5 text-center h-36 overflow-scroll lg:overflow-hidden">{text}</p>
 
             </article>
         </div>
