@@ -75,7 +75,7 @@ const MainReview = () => {
                         </button>
                     </div>
                 </div>
-                <p className="info leading-7 pb-6 text-xl lg:w-5/6 mx-auto mt-5 text-center">{text}</p>
+                <p className="info leading-7 pb-6 md:text-xl text-base w-10/12 md:w-5/6 mx-auto mt-5 text-center">{text}</p>
 
             </article>
         </div>
